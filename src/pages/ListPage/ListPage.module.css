@@ -1,0 +1,121 @@
+.listTable {
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+}
+
+.listTable td, .listTable th {
+    text-align: left;
+    padding: 8px;
+}
+
+.listTable td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 12px;
+}
+
+.listTable thead th {
+    color: #ffffff;
+    background: #4FC3A1;
+}
+
+
+.listTable thead th:nth-child(odd) {
+    color: #ffffff;
+    background: #324960;
+}
+
+.listTable tr:nth-child(even) {
+    background: #F8F8F8;
+}
+
+/* Responsive */
+
+@media (max-width: 767px) {
+    .listTable {
+        display: block;
+        width: 100%;
+    }
+    .table-wrapper:before{
+        content: "Scroll horizontally >";
+        display: block;
+        text-align: right;
+        font-size: 11px;
+        color: white;
+        padding: 0 0 10px;
+    }
+    .listTable thead, .listTable tbody, .listTable thead th {
+        display: block;
+    }
+    .listTable thead th:last-child{
+        border-bottom: none;
+    }
+    .listTable thead {
+        float: left;
+    }
+    .listTable tbody {
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+    }
+    .listTable td, .listTable th {
+        padding: 20px .625em .625em .625em;
+        height: 60px;
+        vertical-align: middle;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 120px;
+        font-size: 13px;
+        text-overflow: ellipsis;
+    }
+    .listTable thead th {
+        text-align: left;
+        border-bottom: 1px solid #f7f7f9;
+    }
+    .listTable tbody tr {
+        display: table-cell;
+    }
+    
+    .listTable tbody tr:nth-child(odd) {
+        background: none;
+    }
+    .listTable tr:nth-child(even) {
+        background: transparent;
+    }
+    .listTable tr td:nth-child(odd) {
+        background: #F8F8F8;
+        border-right: 1px solid #E6E4E4;
+    }
+    .listTable tr td:nth-child(even) {
+        border-right: 1px solid #E6E4E4;
+    }
+    .listTable tbody td {
+        display: block;
+        text-align: center;
+    }
+}
+
+.listTable tr{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+.listTable .rowLink{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+    color: #000;
+    padding: 8px;
+}
