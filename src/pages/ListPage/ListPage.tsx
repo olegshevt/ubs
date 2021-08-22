@@ -21,6 +21,7 @@ const ListPage: React.FC = () => {
     return (
       <div>
         <h1>Music list Important Staff</h1>
+        <h2>Here is a list of Important Staff</h2>
         <table className={s.listTable}>
           <thead>
             <tr>
