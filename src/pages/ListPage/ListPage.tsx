@@ -8,7 +8,9 @@ import Preloader from "../../components/common/Preloader/Preloader";
 
 const ListPage: React.FC = () => {
   const { fetchMusic } = useActions();
-  const { error, data, loading } = useTypedSelector((state) => state.music);
+  const { error, data, loading } = useTypedSelector(
+    (state: any) => state.music
+  );
   const dispatch = useDispatch();
 
   React.useEffect(() => {

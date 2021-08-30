@@ -8,6 +8,7 @@ const Error404: React.FC = () => {
       <div className={s.errorContainer}>
         <h1 className={s.errorItem}>Page not found</h1>
         <h2>Not found</h2>
+        <h4>I updated this page</h4>
         <p className={s.errorItem}>
           You can check <Link to="/">our main page</Link>!
         </p>
